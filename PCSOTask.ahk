@@ -1,13 +1,13 @@
 /* Autohotkey Script Information ==================================================================
  Script Name		: PCSO Task
- Filename			: PCSOTask.ahk
+ Filename		: PCSOTask.ahk
  Description		: Script for PCSO Data, arranging data from Text to Excel
  Script Version		: v1.1.000
  AHK Version		: v1.1.29.01 June 2, 2018
- OS Version			: Windows 7
- Language			: English
+ OS Version		: Windows 7
+ Language		: English
  Script Coder		: LebART0s
- License			: Creative Commons Attribution Non Commercial Share Alike 3.0
+ License		: Creative Commons Attribution Non Commercial Share Alike 3.0
  Date Started		: August 08, 2018
  Date Last Edited	: August 22, 2018
 ===================================================================================================
@@ -35,38 +35,38 @@ Developement Notes:
 ; Initail Script Setup ============================================================================
 ; =================================================================================================
 
-#SingleInstance Force					; Reloads and replaces the current script without confirmation
+#SingleInstance Force			; Reloads and replaces the current script without confirmation
 
-#NoEnv									; Recommended for performance and compatibility with future AutoHotkey releases.
-										; Avoids checking empty variables to see if they are environment variables (recommended for all new scripts).
+#NoEnv					; Recommended for performance and compatibility with future AutoHotkey releases.
+					; Avoids checking empty variables to see if they are environment variables (recommended for all new scripts).
 
 ; SetWorkingDir, C:\Users\Public\Public AHK
 
-SetWorkingDir, %A_ScriptDir%			; Ensures a consistent starting directory.
+SetWorkingDir, %A_ScriptDir%		; Ensures a consistent starting directory.
 
-SendMode Input							; Recommended for new scripts due to its superior speed and reliability.
+SendMode Input				; Recommended for new scripts due to its superior speed and reliability.
 
-SetCapsLockState Off					; Sets the state of the CapsLock
+SetCapsLockState Off			; Sets the state of the CapsLock
 
-SetNumLockState On						; Sets the state of the NumLock
+SetNumLockState On			; Sets the state of the NumLock
 
-SetScrollLockState Off					; Sets the state of the ScrollLock
+SetScrollLockState Off			; Sets the state of the ScrollLock
 
-SetMouseDelay, 10						; Sets the delay that will occur after each mouse movement or click.
+SetMouseDelay, 10			; Sets the delay that will occur after each mouse movement or click.
 
-SetDefaultMouseSpeed, 2					; Sets the mouse speed that will be used if unspecified in Click and MouseMove/Click/Drag.
+SetDefaultMouseSpeed, 2			; Sets the mouse speed that will be used if unspecified in Click and MouseMove/Click/Drag.
 
-SetKeyDelay, 10							; Sets the delay that will occur after each keystroke sent by Send and ControlSend.
+SetKeyDelay, 10				; Sets the delay that will occur after each keystroke sent by Send and ControlSend.
 
-SetWinDelay, 100						; Sets the delay that will occur after each windowing command, such as WinActivate
+SetWinDelay, 100			; Sets the delay that will occur after each windowing command, such as WinActivate
 
-SetBatchLines, 10ms						; Determines how fast a script will run (affects CPU utilization).
+SetBatchLines, 10ms			; Determines how fast a script will run (affects CPU utilization).
 
-SetControlDelay, 20						; Sets the delay that will occur after each control modifying command.
+SetControlDelay, 20			; Sets the delay that will occur after each control modifying command.
 
-;#InstallKeybdHook						; For Debugging
+;#InstallKeybdHook			; For Debugging
 
-;#InstallMouseHook						; For Debugging
+;#InstallMouseHook			; For Debugging
 
 
 ; Global Variable Declaration =====================================================================
@@ -140,96 +140,96 @@ Sleep, 100
 ; Search and Replace Setup
 Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
 
 ; Search and Replace
 
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 Send, -{Tab}\t
 Send, {Alt Down}a{Alt Up}		; Replace All
 Sleep, 100
 
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 Send, {Space}{Tab}\t			; Replace Spaces with Tabs
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}a{Alt Up}		; Replace All
 
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
 
 Sleep, 100
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
-Send, {Space}{Tab}\t				; Replace Spaces with Tabs
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
+Send, {Space}{Tab}\t			; Replace Spaces with Tabs
+Send, {Alt Down}a{Alt Up}		; Replace All
 
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 
 Sleep, 100
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
-Send, \t\t{Tab}\t					; Replace Double Tabs with Single Tabs
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
+Send, \t\t{Tab}\t			; Replace Double Tabs with Single Tabs
+Send, {Alt Down}a{Alt Up}		; Replace All
 
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 
 Sleep, 100
 Send, Ultra\tLotto\t6/58{tab}Ultra Lotto 6 58			; Remove Tabs from this string
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}a{Alt Up}		; Replace All
 
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 
 Sleep, 100
 Send, Grand\tLotto\t6/55{tab}Grand Lotto 6 55			; Remove Tabs from this string
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}a{Alt Up}		; Replace All
 
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 
 Sleep, 100
 Send, Superlotto\t6/49{tab}Superlotto 6 49			; Remove Tabs from this string
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}a{Alt Up}		; Replace All
 
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}h{Ctrl Up}			; Activate Search and Replace Ctrl+H
-Send, {Alt Down}x{Alt Up}			; Set Search Mode to Extended
-Send, {Alt Down}f{Alt Up}			; Return to Find What Textbox
+Send, {Ctrl Down}h{Ctrl Up}		; Activate Search and Replace Ctrl+H
+Send, {Alt Down}x{Alt Up}		; Set Search Mode to Extended
+Send, {Alt Down}f{Alt Up}		; Return to Find What Textbox
 
 Sleep, 100
 Send, Megalotto\t6/45{tab}Megalotto 6 45			; Remove Tabs from this string
-Send, {Alt Down}a{Alt Up}			; Replace All
+Send, {Alt Down}a{Alt Up}		; Replace All
 Sleep, 100
-Send, {Escape}{Escape}				; Exit out of Search and Replace
+Send, {Escape}{Escape}			; Exit out of Search and Replace
 Sleep, 100
-Send, {Ctrl Down}{home}{Ctrl Up}			; Control+Home Go to the top most part of the Text Data File
+Send, {Ctrl Down}{home}{Ctrl Up}	; Control+Home Go to the top most part of the Text Data File
 Sleep, 100
-Send, {Ctrl Down}a{Ctrl Up}			; Select All
+Send, {Ctrl Down}a{Ctrl Up}		; Select All
 Sleep, 100
-Send, {Ctrl Down}c{Ctrl Up}			; Copy formatted data in Working Text File
+Send, {Ctrl Down}c{Ctrl Up}		; Copy formatted data in Working Text File
 Sleep, 100
-Send, {Ctrl Down}w{Ctrl Up}			; Close Working Text File PCSOData.txt
+Send, {Ctrl Down}w{Ctrl Up}		; Close Working Text File PCSOData.txt
 Sleep, 100
 Send, n
 Sleep, 100
@@ -237,18 +237,18 @@ Sleep, 100
 ; Excel Data processing section
 Try
 {
-	objExcel := ComObjActive("Excel.Application")			; Activate Excel application for data processing
+	objExcel := ComObjActive("Excel.Application")		; Activate Excel application for data processing
 	Sleep, 100
-	objExcel.Sheets.Add							; Insert Sheet
-	objExcel.ActiveSheet.Paste					; Paste data from Text File PCSOData.txt
-	objExcel.Cells.Select						; Select entire sheet
+	objExcel.Sheets.Add					; Insert Sheet
+	objExcel.ActiveSheet.Paste				; Paste data from Text File PCSOData.txt
+	objExcel.Cells.Select					; Select entire sheet
 	objExcel.Cells.EntireColumn.AutoFit			; Autofit columns
 	objExcel.Columns("H:H").Select				; Select Date columns
-	objExcel.Selection.Cut						; Move and insert Date column to diffrent column
+	objExcel.Selection.Cut					; Move and insert Date column to diffrent column
 	objExcel.Columns("B:B").Select				; Select column for date column to be inserted
-	objExcel.Selection.Insert					; Insert Date column and shift columns to the right
+	objExcel.Selection.Insert				; Insert Date column and shift columns to the right
 	Sleep, 100
-	objExcel.Visible := 1						; Show Excel Application on screen
+	objExcel.Visible := 1					; Show Excel Application on screen
 	MsgBox, Data Processing Finished...
 }
 Catch
