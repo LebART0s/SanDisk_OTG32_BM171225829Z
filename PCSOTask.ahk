@@ -103,19 +103,18 @@ Sleep, 100
 IfWinExist ahk_class Notepad++
 	{
 
-		MsgBox True!!!
-		return
+;		MsgBox True!!!			; for debugging
+;		Return
 
 		WinActivateBottom, Notepad++
 
 		Send, {Ctrl Down}{Shift Down}w{Shift Up}{Ctrl Up}			; Activate Search and Replace Ctrl+H
 
-		IfWinExist ahk_class #32770
+		IfWinExist ahk_class #32770			; Save? Yes/No MsgBox
 			{
 				Send, n
+				Sleep, 100
 			}
-
-		Sleep, 10000
 
 		Run "C:\Program Files\Notepad++\notepad++.exe" %strAHKFilename3%
 
@@ -253,7 +252,7 @@ Try
 }
 Catch
 {
-	MsgBox Something went wrong somewhere!!!
+	MsgBox Something went wrong somewhere!!!		; This will happen when there is no active Excel Application
 }
 
 Return
@@ -262,7 +261,7 @@ Return
 ; Labels / SubProcedures ==========================================================================
 ; =================================================================================================
 
-guiClose:
+guiClose:			; Close Button on the Graphical User Interface (GUI)
 	ExitApp			; Terminates the script unconditionally
 
 
@@ -271,6 +270,10 @@ guiClose:
 
 
 ; Classes =========================================================================================
+; =================================================================================================
+
+
+; HotStrings ======================================================================================
 ; =================================================================================================
 
 
