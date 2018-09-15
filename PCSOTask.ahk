@@ -64,9 +64,9 @@ SetBatchLines, 10ms			; Determines how fast a script will run (affects CPU utili
 
 SetControlDelay, 20			; Sets the delay that will occur after each control modifying command.
 
-;#InstallKeybdHook			; For Debugging
+#InstallKeybdHook			; For Debugging
 
-;#InstallMouseHook			; For Debugging
+#InstallMouseHook			; For Debugging
 
 
 ; Global Variable Declaration =====================================================================
