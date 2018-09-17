@@ -43,25 +43,15 @@ Developement Notes:
 ; SetWorkingDir, C:\Users\Public\Public AHK
 
 SetWorkingDir, %A_ScriptDir%		; Ensures a consistent starting directory.
-
 SendMode Input				; Recommended for new scripts due to its superior speed and reliability.
-
 SetCapsLockState Off			; Sets the state of the CapsLock
-
 SetNumLockState On			; Sets the state of the NumLock
-
 SetScrollLockState Off			; Sets the state of the ScrollLock
-
 SetMouseDelay, 10			; Sets the delay that will occur after each mouse movement or click.
-
 SetDefaultMouseSpeed, 2			; Sets the mouse speed that will be used if unspecified in Click and MouseMove/Click/Drag.
-
 SetKeyDelay, 10				; Sets the delay that will occur after each keystroke sent by Send and ControlSend.
-
 SetWinDelay, 100			; Sets the delay that will occur after each windowing command, such as WinActivate
-
 SetBatchLines, 10ms			; Determines how fast a script will run (affects CPU utilization).
-
 SetControlDelay, 20			; Sets the delay that will occur after each control modifying command.
 
 #InstallKeybdHook			; For Debugging
