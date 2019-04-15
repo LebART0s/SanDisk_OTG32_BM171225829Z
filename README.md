@@ -8,3 +8,7 @@ My Personal AutoHotKey Library - Used in various tasks on my laptop and desktop 
 - FTSReset.AHK - File Timestamp reset.
 
 - Minecraft.AHK - Simple Minecraft mouse spamming (clicker).
+
+- RSITimer.AHK - Simple RSI Timer.
+
+- TimeStamp.AHK - TimeStamp / Custom Version (via Date/Time)
