@@ -6,3 +6,5 @@ My Personal AutoHotKey Library - Used in various tasks on my laptop and desktop 
 - PCSOResult.xlsx - My Main Excel Data File for Data gathered from the PCSO Website.
 
 - FTSReset.AHK - File Timestamp reset.
+
+- Minecraft.AHK - Simple Minecraft mouse spamming (clicker).
