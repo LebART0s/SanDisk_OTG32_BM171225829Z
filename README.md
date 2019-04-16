@@ -5,10 +5,10 @@ My Personal AutoHotKey Library - Used in various tasks on my laptop and desktop 
 
 - PCSOResult.xlsx - My Main Excel Data File for Data gathered from the PCSO Website.
 
-- FTSReset.AHK - File Timestamp reset.
+- FTSReset.AHK - File system timestamp reset (Windows 7).
 
-- Minecraft.AHK - Simple Minecraft mouse spamming (clicker).
+- Minecraft.AHK - Simple Minecraft mouse spamming/holding.
 
 - RSITimer.AHK - Simple RSI Timer.
 
-- TimeStamp.AHK - TimeStamp / Custom Version (via Date/Time)
+- TimeStamp.AHK - TimeStamp / VersionStamp based on Datetime
