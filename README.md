@@ -1,5 +1,5 @@
 # SanDisk_OTG32_BM171225829Z
-My Personal AutoHotKey Library - Used in various tasks on my laptop and desktop computers
+My Personal AutoHotKey Library - Used in various tasks on my laptop and desktop computers both home and office use.
 
 - PCSOTask.ahk - Autohotkey automation for data acquired from the Philippines Charity Sweepstakes Office Website (PCSO) as Data Text File for Cleaning and Formatting for which it will be inserted to an Excel Worksheet to be used for data analysis.
 
@@ -11,4 +11,4 @@ My Personal AutoHotKey Library - Used in various tasks on my laptop and desktop 
 
 - RSITimer.AHK - Simple RSI Timer.
 
-- TimeStamp.AHK - TimeStamp / VersionStamp based on Datetime
+- TimeStamp.AHK - TimeStamp / VersionStamp based on Datetime.
